@@ -1,0 +1,344 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "x1": {
+      "type": "number"
+    },
+    "y1": {
+      "type": "number"
+    },
+    "z1": {
+      "type": "number"
+    },
+    "v1": {
+      "type": "number"
+    },
+    "x2": {
+      "type": "number"
+    },
+    "y2": {
+      "type": "number"
+    },
+    "z2": {
+      "type": "number"
+    },
+    "v2": {
+      "type": "number"
+    },
+    "x3": {
+      "type": "number"
+    },
+    "y3": {
+      "type": "number"
+    },
+    "z3": {
+      "type": "number"
+    },
+    "v3": {
+      "type": "number"
+    },
+    "x4": {
+      "type": "number"
+    },
+    "y4": {
+      "type": "number"
+    },
+    "z4": {
+      "type": "number"
+    },
+    "v4": {
+      "type": "number"
+    },
+    "x5": {
+      "type": "number"
+    },
+    "y5": {
+      "type": "number"
+    },
+    "z5": {
+      "type": "number"
+    },
+    "v5": {
+      "type": "number"
+    },
+    "x6": {
+      "type": "number"
+    },
+    "y6": {
+      "type": "number"
+    },
+    "z6": {
+      "type": "number"
+    },
+    "v6": {
+      "type": "number"
+    },
+    "x7": {
+      "type": "number"
+    },
+    "y7": {
+      "type": "number"
+    },
+    "z7": {
+      "type": "number"
+    },
+    "v7": {
+      "type": "number"
+    },
+    "x8": {
+      "type": "number"
+    },
+    "y8": {
+      "type": "number"
+    },
+    "z8": {
+      "type": "number"
+    },
+    "v8": {
+      "type": "number"
+    },
+    "x9": {
+      "type": "number"
+    },
+    "y9": {
+      "type": "number"
+    },
+    "z9": {
+      "type": "number"
+    },
+    "v9": {
+      "type": "number"
+    },
+    "x10": {
+      "type": "number"
+    },
+    "y10": {
+      "type": "number"
+    },
+    "z10": {
+      "type": "number"
+    },
+    "v10": {
+      "type": "number"
+    },
+    "x11": {
+      "type": "number"
+    },
+    "y11": {
+      "type": "number"
+    },
+    "z11": {
+      "type": "number"
+    },
+    "v11": {
+      "type": "number"
+    },
+    "x12": {
+      "type": "number"
+    },
+    "y12": {
+      "type": "number"
+    },
+    "z12": {
+      "type": "number"
+    },
+    "v12": {
+      "type": "number"
+    },
+    "x13": {
+      "type": "number"
+    },
+    "y13": {
+      "type": "number"
+    },
+    "z13": {
+      "type": "number"
+    },
+    "v13": {
+      "type": "number"
+    },
+    "x14": {
+      "type": "number"
+    },
+    "y14": {
+      "type": "number"
+    },
+    "z14": {
+      "type": "number"
+    },
+    "v14": {
+      "type": "number"
+    },
+    "x15": {
+      "type": "number"
+    },
+    "y15": {
+      "type": "number"
+    },
+    "z15": {
+      "type": "number"
+    },
+    "v15": {
+      "type": "number"
+    },
+    "x16": {
+      "type": "number"
+    },
+    "y16": {
+      "type": "number"
+    },
+    "z16": {
+      "type": "number"
+    },
+    "v16": {
+      "type": "number"
+    },
+    "x17": {
+      "type": "number"
+    },
+    "y17": {
+      "type": "number"
+    },
+    "z17": {
+      "type": "number"
+    },
+    "v17": {
+      "type": "number"
+    },
+    "x18": {
+      "type": "number"
+    },
+    "y18": {
+      "type": "number"
+    },
+    "z18": {
+      "type": "number"
+    },
+    "v18": {
+      "type": "number"
+    },
+    "x19": {
+      "type": "number"
+    },
+    "y19": {
+      "type": "number"
+    },
+    "z19": {
+      "type": "number"
+    },
+    "v19": {
+      "type": "number"
+    },
+    "x20": {
+      "type": "number"
+    },
+    "y20": {
+      "type": "number"
+    },
+    "z20": {
+      "type": "number"
+    },
+    "v20": {
+      "type": "number"
+    },
+    "x21": {
+      "type": "number"
+    },
+    "y21": {
+      "type": "number"
+    },
+    "z21": {
+      "type": "number"
+    },
+    "v21": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "x1",
+    "y1",
+    "z1",
+    "v1",
+    "x2",
+    "y2",
+    "z2",
+    "v2",
+    "x3",
+    "y3",
+    "z3",
+    "v3",
+    "x4",
+    "y4",
+    "z4",
+    "v4",
+    "x5",
+    "y5",
+    "z5",
+    "v5",
+    "x6",
+    "y6",
+    "z6",
+    "v6",
+    "x7",
+    "y7",
+    "z7",
+    "v7",
+    "x8",
+    "y8",
+    "z8",
+    "v8",
+    "x9",
+    "y9",
+    "z9",
+    "v9",
+    "x10",
+    "y10",
+    "z10",
+    "v10",
+    "x11",
+    "y11",
+    "z11",
+    "v11",
+    "x12",
+    "y12",
+    "z12",
+    "v12",
+    "x13",
+    "y13",
+    "z13",
+    "v13",
+    "x14",
+    "y14",
+    "z14",
+    "v14",
+    "x15",
+    "y15",
+    "z15",
+    "v15",
+    "x16",
+    "y16",
+    "z16",
+    "v16",
+    "x17",
+    "y17",
+    "z17",
+    "v17",
+    "x18",
+    "y18",
+    "z18",
+    "v18",
+    "x19",
+    "y19",
+    "z19",
+    "v19",
+    "x20",
+    "y20",
+    "z20",
+    "v20",
+    "x21",
+    "y21",
+    "z21",
+    "v21"
+  ]
+}
