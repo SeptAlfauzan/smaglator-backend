@@ -9,7 +9,10 @@ class MediaPipeService:
     mp_hands = mp.solutions.hands
 
     def start(self):
+<<<<<<< HEAD
         self.cap.open(0)
+=======
+>>>>>>> e297223f20806da03080584592e9a342caea664f
         self.is_running = True
 
         while self.is_running:

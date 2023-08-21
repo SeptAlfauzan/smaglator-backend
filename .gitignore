@@ -1,9 +1,14 @@
 .space
 __pycache__
 <<<<<<< HEAD
+<<<<<<< HEAD
 newenv
 =======
 newenv
 *_env
 .env
 >>>>>>> 634b268 (refactoring mqtt service)
+=======
+newenv
+*_env
+>>>>>>> e297223f20806da03080584592e9a342caea664f
