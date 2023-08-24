@@ -20,6 +20,9 @@ class MQTTService:
     def on_publish(self, client, userdata, mid, properties=None):
         print("mid: " + str(mid))
 
+    def single_publish(self, client, userdata, mid, properties=None):
+        client.loop_stop()
+
     # print which topic was subscribed to
     def on_subscribe(self, client, userdata, mid, granted_qos, properties=None):
         print("Subscribed: " + str(mid) + " " + str(granted_qos))
@@ -48,7 +51,7 @@ class MQTTService:
         try:
             client = self._init()
             # connect to HiveMQ Cloud on port 8883 (default for MQTT)
-            client.connect(hostname, 8883)
+            client.connect(hostname, port)
 
             # setting callbacks, use separate functions like above for better visibility
             client.on_subscribe = self.on_subscribe

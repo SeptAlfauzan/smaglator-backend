@@ -1,5 +1,7 @@
 import mediapipe as mp
 import cv2
+import numpy as np
+import time
 
 
 class MediaPipeService:
@@ -8,11 +10,8 @@ class MediaPipeService:
     mp_drawing = mp.solutions.drawing_utils
     mp_hands = mp.solutions.hands
 
-    def start(self):
-<<<<<<< HEAD
+    def start(self, on_detected: callable = None):
         self.cap.open(0)
-=======
->>>>>>> e297223f20806da03080584592e9a342caea664f
         self.is_running = True
 
         while self.is_running:
@@ -47,6 +46,22 @@ class MediaPipeService:
                                     color=(80, 44, 121), thickness=2, circle_radius=2
                                 ),
                             )
+                            hand_features = list(
+                                np.array(
+                                    [
+                                        [
+                                            landmark.x,
+                                            landmark.y,
+                                            landmark.z,
+                                            landmark.visibility,
+                                        ]
+                                        for landmark in hand_landmarks.landmark
+                                    ]
+                                ).flatten()
+                            )
+                            time.sleep(0.2)
+                            # print(hand_features)
+                            on_detected(hand_features)
 
                     cv2.imshow("Raw Webcam Feed", image)
 

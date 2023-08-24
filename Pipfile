@@ -1,0 +1,2 @@
+[scripts]
+dev = "python ./app/client/main.py"

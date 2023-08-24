@@ -1,29 +1,34 @@
-import time
 import paho.mqtt.client as paho
 import paho.mqtt.publish as publish
 import os
 from dotenv import load_dotenv
 from paho import mqtt
 
+load_dotenv()
+
 hostname = os.getenv("MQTT_URL")
+print(os.getenv("MQTT_PORT"))
 port = int(os.getenv("MQTT_PORT"))
 
 
 class MQTTService:
     # setting callbacks for different events to see if it works, print the message etc.
-    def on_connect(client, userdata, flags, rc, properties=None):
+    def on_connect(self, client, userdata, flags, rc, properties=None):
         print("connect received with code %s." % rc)
 
     # with this callback you can see if your publish was successful
-    def on_publish(client, userdata, mid, properties=None):
+    def on_publish(self, client, userdata, mid, properties=None):
         print("mid: " + str(mid))
 
+    def single_publish(self, client, userdata, mid, properties=None):
+        client.loop_stop()
+
     # print which topic was subscribed to
-    def on_subscribe(client, userdata, mid, granted_qos, properties=None):
+    def on_subscribe(self, client, userdata, mid, granted_qos, properties=None):
         print("Subscribed: " + str(mid) + " " + str(granted_qos))
 
     # print message, useful for checking if it was successful
-    def on_message(client, userdata, msg):
+    def on_message(self, client, userdata, msg):
         print(msg.topic + " " + str(msg.qos) + " " + str(msg.payload))
 
     def _init(self) -> paho.Client:
@@ -49,7 +54,7 @@ class MQTTService:
             client.connect(hostname, port)
 
             # setting callbacks, use separate functions like above for better visibility
-            client.on_subscribe = self.n_subscribe
+            client.on_subscribe = self.on_subscribe
             client.on_message = self.on_message
             client.on_publish = self.on_publish
             return client

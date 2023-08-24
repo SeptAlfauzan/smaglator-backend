@@ -2,3 +2,5 @@ unit_test
 docs
 __pycache__
 newenv
+client_env
+_client_env

@@ -8,7 +8,7 @@ app = FastAPI(title="SMAGLATOR API")
 
 
 app.include_router(HandGestureDetectionRouter)
-app.include_router(MQTTRouter)
+# app.include_router(MQTTRouter)
 
 
 @app.get("/")

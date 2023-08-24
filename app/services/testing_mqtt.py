@@ -1,4 +1,5 @@
 from time import sleep
+import time
 import paho.mqtt.client as paho
 from mqtt import MQTTService
 
@@ -28,8 +29,16 @@ def on_message(client: paho.Client, userdata: any, msg: paho.MQTTMessage):
         print(msg.payload)
 
 
+def on_connect(client, userdata, flags, rc):
+    print("Connected with result code " + str(rc))
+    client.publish("topic/test", "Hello MQTT")
+
+
 mqtt = MQTTService()
 client = mqtt.start_connection()
+client.loop_start()
 client.subscribe("smaglator/client", qos=0)
+client.publish("smaglator/client", "connect")
 client.on_message = on_message
-client.loop_forever()
+time.sleep(2)
+client.loop_stop()
